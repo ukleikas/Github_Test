@@ -1,0 +1,782 @@
+:root{
+  --color-orange: #E4714E;
+  --color-dark: #505050;
+  --color-light: #C4C4C4;
+  --color-lightbrown:#FFF5EB;
+  --color-lightbrown_bg:#e6e6e6;
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+  html{
+    font-size: 55%;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+/* TOP NAVIGATION STYLES */
+#top-navigation{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Fonts */
+p{
+  font-size: 1.8rem;
+  color: var(--color-light);
+}
+
+h1{
+  font-size: 8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+}
+
+h2{
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+
+}
+
+h3{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+/* btn */
+
+.btn.btn-warning{
+  font-size: 2rem;
+  background-color:var(--color-orange);
+  font-weight: 500;
+  color:#fff;
+  padding: 1rem 5rem;
+  border: none;
+  border-radius: 8px;
+  letter-spacing: .8px;
+}
+
+.btn.btn-warning a{
+  text-decoration: none;
+}
+
+svg.arrow-side{
+  fill:var(--color-orange);
+  height: 3.5rem;
+}
+
+svg.arrow-side-left{
+  /* color:var(--color-orange); */
+  height: 3.5rem;
+  transform: rotate(180deg);
+}
+
+/* General */
+.tl{
+  text-align: left;
+}
+
+.tr{
+  text-align: right;
+}
+
+.hei-100{
+  height: 100%;
+}
+
+.mar-standart{
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.mar-standart-left{
+  margin: 10rem 0 5rem 0;
+  text-align: left;
+}
+
+.mar-dots{
+  margin: 5rem 0 10rem 0;
+  text-align: center;
+}
+
+.mar-standart-sm{
+  margin: 5rem 0 5rem 0;
+  text-align: left;
+}
+
+.bg-light-brown{
+background-color: var(--color-lightbrown_bg);
+}
+
+.bg-light-grey{
+background-color: var(--color-light);
+}
+
+.bg-dark-grey-gradient{
+background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(80,80,80,1) 100%);
+}
+
+.bg-light-orange{
+background-color: var(--color-orange);
+}
+
+.bg-black-1{
+  background-color: #000000;
+}
+
+.bg-grey-test{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color-light);
+}
+
+.bg-hero-main {
+  background: url("assets/images/hero-foto.png") bottom right,
+  var(--color-dark);
+  background-size: auto 120%;
+  background-repeat:no-repeat;
+  background-color: var(--color-dark);
+  width: 100%;
+  height: 75vh;
+}
+
+
+/* Header navigacija */
+
+.logo_container-logo{
+  display: inline-block;
+  max-width: 12rem;
+  height: auto;
+  vertical-align: middle;
+}
+
+.main_menu-navigation{
+  list-style: none;
+  font-size: 1.7rem;
+  line-height: 7rem;
+}
+
+.main_menu-navigation{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+ul.main_menu-navigation li.main_menu-item{
+  display: inline-block;
+  margin: 0 2.5rem;
+  padding: 0;
+}
+
+ul.main_menu-navigation li a{
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+ul.main_menu-navigation li:hover a{
+  color: var(--color-orange);
+}
+
+ul.main_menu-navigation li:last-child{
+  text-align: left;
+  margin: 0;
+}
+
+ul.main_menu-navigation li:first-child{
+  text-align: right;
+  margin:0;
+}
+
+
+.nav_contacts{
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+
+ul.nav_contacts-list{
+  display: inline-block;
+  list-style: none;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  color: var(--color-orange);
+
+}
+
+.extra-info{
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+@media only screen and (max-width: 768px) {
+
+  .logo_container{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+
+  .nav_contacts {
+    opacity: 0;
+    visibility:hidden;
+    display: none;
+  }
+}
+
+/* Hero Page */
+
+.hero_page{
+  position: relative;
+  background: linear-gradient(0deg, rgba(5,5,5,1) 15%, rgba(80,80,80,1) 100%);
+  width: 100%;
+  /* height: 75vh; */
+}
+
+.hero_page-image{
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.hero_page-image img{
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+
+.main-title{
+  display: block;
+  width: 100%;
+}
+
+h1.main_title-headline{
+  color:white;
+}
+
+.main_title p{
+  padding: 2.3rem 0;
+  text-align: left;
+  max-width: 580px;
+  color: white;
+  /* text-shadow: 2px 2px 2px rgba(0,0,0,0.5); */
+}
+
+h1.main_title-headline span{
+  color:var(--color-orange);
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main_title{
+    text-align: center;
+  }
+
+  .main_title a.btn.btn-warning{
+    text-align: center;
+  }
+
+  h1.main_title-headline{
+    text-align: center;
+    /* font-size: 7rem; */
+  }
+
+  .main_title p{
+    padding: 2.3rem 0;
+    text-align: center;
+    /* font-size: 1.5rem; */
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+  }
+
+  .bg-hero-main {
+    background: url("assets/images/hero-foto.png") bottom right,linear-gradient(0deg, rgba(5,5,5,0) 15%, rgba(80,80,80,1) 100%);
+    background-size: auto 120%;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 75vh;
+  }
+
+}
+
+
+
+/* Paslaugu section */
+
+
+.paslaugos-item{
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.paslaugos-item p{
+  width: 85%;
+  font-size: 1.4rem;
+  margin: 1.3rem auto 0 auto;
+}
+.paslaugos-item h3{
+  margin-top: 2.2rem;
+}
+
+
+.icon{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color:var(--color-lightbrown);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.icon-corner{
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color:var(--color-lightbrown);
+  border-radius: 10px;
+  text-align: center;
+  top: -3.8rem;
+  right: -3.8rem;
+}
+
+.icon .icon-img{
+  display: inline-block;
+  width: 7.6rem;
+  height: 7.6rem;
+  padding: 8px;
+  /* margin: auto 0; */
+}
+.icon-corner .icon-img{
+  display: inline-block;
+  width: 7.6rem;
+  height: 7.6rem;
+  padding: 8px;
+  height: auto;
+  /* margin: auto 0; */
+}
+
+
+.info-section-text{
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 60%;
+}
+
+.info-section-text p{
+  padding: 2.3rem 0;
+  /* padding-bottom: 2rem; */
+  text-align: left;
+  max-width: 580px;
+  /* text-shadow: 2px 2px 2px rgba(0,0,0,0.8); */
+}
+
+.info-section-text a{
+  text-decoration: none;
+  color: var(--color-orange);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Gedimas */
+
+
+.img-container-gedimas{
+display: inline-block;
+background-color: red;
+width: 45%;
+height: 50rem;
+max-height: 50rem;
+shrink:1;
+}
+
+.remontas-img-1{
+position: relative;
+background: url("assets/images/gedimas-1.jpeg") center;
+background-size: cover;
+background-repeat:no-repeat;
+}
+.remontas-img-2{
+position: relative;
+background: url("assets/images/gedimas-2.jpeg") center;
+background-size: cover;
+background-repeat:no-repeat;
+}
+
+
+.circle{
+  display: inline-block;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 1.35rem;
+  border: .17rem solid var(--color-orange);
+  margin-left: 1rem;
+}
+
+.circle-full{
+  background-color: var(--color-orange);
+}
+
+.circle-nav .circle:first-child{
+  margin-left: 0rem;
+}
+
+.gedimas-section{
+  text-align: center;
+}
+
+.gedimas-section p{
+  display: inline-block;
+  padding: 2.3rem 0 0 0;
+  color: var(--color-dark);
+  margin:0 auto;
+}
+
+/* Testimonial */
+
+.testimonial-wrap{
+  position: relative;
+  background-color: #505050;
+  width: 100%;
+  height: auto;
+}
+
+.circle-wrapper{
+  position: absolute;
+  display: inline-block;
+  width: 11rem;
+  height: 11rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  left:0;
+  right:0;
+  top:5rem;
+}
+
+.testimonial-wrap .customer-img{
+  position: relative;
+  left:-2rem;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.testimonial-wrap-text{
+  position: relative;
+  padding: 5rem 0 5rem 0;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.testimonial-wrap-text p{
+  display: block;
+  max-width: 80%;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.testimonial{
+  display: block;
+  max-width: 80%;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.testimonial-wrap-text p span{
+  color: var(--color-orange);
+  font-weight: 700;
+  font-size: 2.3rem;
+}
+
+.testimonial-wrap-text p:last-child{
+  color: var(--color-light);
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+section.cta-page {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cta-img-container-1{
+  position: absolute;
+  width: 35rem;
+  height: 35rem;
+  overflow: hidden;
+  top:0;
+  bottom:0;
+  right: 0;
+}
+
+.cta-img-container-2{
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  bottom:0rem;
+  left:2rem;
+}
+
+img.cta-img{
+  width: auto;
+  height: 100%;
+}
+
+img.cta-img.img-big{
+  height: 200%;
+  width: auto;
+}
+
+.logos ul{
+  position: relative;
+  display: block;
+width: 100%;
+list-style: none;
+padding-left: 0;
+margin: 5rem 0 2rem 0;
+}
+
+.logos ul li{
+  display: inline-block;
+width: 15%;
+max-width: 15rem;
+}
+
+.logos ul li img{
+  position: inline-block;
+  width: 100%;
+
+  height: auto;
+}
+
+
+.kontaktai{
+  text-align: center;
+}
+
+.kontaktai .icon-kontaktai{
+  display: inline-block;
+  height: auto;
+  width: 3.5rem;
+  padding: 5rem 0 .5rem 0;
+}
+
+.kontaktai h2{
+  padding-bottom: 5rem;
+}
+
+.kontaktai:last-child h2{
+  color:#fff;
+}
+
+.kontaktai:last-child img{
+filter: invert(100%);
+}
+
+section#registracijos-forma{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.section-title-registracija h2{
+  color:white;
+}
+
+
+/* Registracijos forma */
+
+#registracijos-forma form{
+  display: block;
+  text-align: left;
+  padding-bottom: 10rem;
+}
+
+#registracijos-forma form input{
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border-radius: .8rem;
+  border: none;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+input:not([type="submit"]) {
+  background-color: var(--color-dark);
+}
+
+#registracijos-forma .input-right{
+  float: right;
+}
+
+#registracijos-forma form input[type="checkbox"]{
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: .2rem;
+  border: none;
+  margin-right: .5rem;
+}
+
+#registracijos-forma form input:checked{
+  background-color: var(--color-orange);
+}
+
+#registracijos-forma form input:focus,
+#registracijos-forma form textarea:focus{
+  background-color: rgba( 57, 57, 57, .9);
+  border: 2px solid var(--color-orange);
+}
+
+
+#registracijos-forma form textarea{
+  display: block;
+  width: 100%;
+  border-radius: .8rem;
+  border: none;
+  font-size: 1.3rem;
+  padding: 1rem 0 0 1rem;
+  color: white;
+  background-color: var(--color-dark);
+}
+
+#registracijos-forma form label{
+  display: inline-block;
+  font-size: 1.1rem;
+  color:var(--color-light);
+  padding-bottom: .2rem;
+}
+
+#registracijos-forma form .btn.btn-warning{
+  width: 100%;
+}
+
+/* DUK */
+
+.DUK-list ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom:10rem;
+
+}
+
+li.duk-list-item h3{
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+
+li.duk-list-item h3::before{
+  content:"+";
+  font-size: 2.2rem;
+  color: var(--color-orange);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+li.duk-list-item:nth-child(odd) h3::before{
+  content:"-";
+  font-size: 2.2rem;
+  color: var(--color-orange);
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+li.duk-list-item p{
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-align: justify;
+  padding-left: 2.6rem
+  color: rgba(0,0,0,0.4);
+}
+
+.duk-list-item p{
+  color: rgba(0,0,0,0.4);
+}
+
+
+.darbo-laikas{
+  display: block;
+  width: 60%;
+  text-align: center;
+}
+.darbo-laikas h3{
+  text-transform: none;
+  /* margin-bottom: 2rem; */
+  color: white;
+}
+
+.darbo-laikas h3.regular{
+  font-weight: 300;
+}
+.darbo-laikas h3.location-title{
+  margin-bottom: 2rem;
+}
+
+.darbo-laikas hr{
+display: inline-block;
+width: 100%;
+border: 2px solid white;
+color: white;
+margin:4rem 0 4rem 0;
+}
+
+.icon-location{
+  display: inline-block;
+  width: 5rem;
+  height: auto;
+  padding: 8px;
+  filter: invert(1);
+  margin-bottom: 2rem;
+}
+
+.duk-section{
+  display: block;
+  width: 60%;
+  height: auto;
+}
+.map-placement{
+  padding:0;
+}
+.map-placement img{
+  display: block;
+  width: 100%;
+  background-size:cover;
+}
+
+
+
+/* asd */
