@@ -150,9 +150,17 @@ svg.arrow-side-left{
     margin-bottom: 5rem;
   }
 
-  .img_info-none{
+  .d-pre-none{
     display: none;
-    visibility: hidden;
+    visibility: hidden;}
+  }
+
+.kontaktai .icon-kontaktai{
+    display: none;
+  }
+
+.kontaktai h2{
+  padding:none;
   }
 
 }
@@ -399,6 +407,15 @@ h1.main_title-headline span{
   right: -3.8rem;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .icon-corner{
+    display: none;
+    visibility: none;
+  }
+
+}
+
 .icon .icon-img{
   display: inline-block;
   width: 7.6rem;
@@ -421,6 +438,9 @@ h1.main_title-headline span{
     padding-bottom: 5rem;
   }
 
+.paslaugos_container .col-md-3:last-child .paslaugos-item{
+  padding-bottom: 0rem;
+}
 }
 
 
@@ -498,6 +518,26 @@ background-repeat:no-repeat;
 .circle-nav .circle:first-child{
   margin-left: 0rem;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .circle-nav::before{
+    content: "\2190";
+    color: var(--color-dark);
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  .circle-nav::after{
+    content: "\2192";
+    color: var(--color-dark);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+
+}
+
+
 
 .gedimas-section{
   text-align: center;
@@ -612,6 +652,22 @@ img.cta-img.img-big{
   width: auto;
 }
 
+@media only screen and (max-width: 768px) {
+
+.main_title{
+  display: inline-block;
+  margin-bottom: 0;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.cta-page .justify-content-left{
+  justify-content: center;
+}
+
+}
+
+
 .logos ul{
   position: relative;
   display: block;
@@ -640,7 +696,6 @@ max-width: 15rem;
 }
 
 .kontaktai .icon-kontaktai{
-  display: inline-block;
   height: auto;
   width: 3.5rem;
   padding: 5rem 0 .5rem 0;
@@ -658,23 +713,37 @@ max-width: 15rem;
 filter: invert(100%);
 }
 
+@media only screen and (max-width: 768px) {
+
+  .kontaktai h2{
+    padding-top: 5rem;
+  }
+
+}
+
+
+
+/* Registracijos forma */
+
+
 section#registracijos-forma{
   position: relative;
   height: auto;
   width: 100%;
+  color: white;
 }
-
-.section-title-registracija h2{
-  color:white;
-}
-
-
-/* Registracijos forma */
 
 #registracijos-forma form{
   display: block;
   text-align: left;
   padding-bottom: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #registracijos-forma form{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 #registracijos-forma form input{
@@ -786,6 +855,16 @@ li.duk-list-item p{
   width: 60%;
   text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .darbo-laikas{
+    width: 75%;
+  }
+}
+
+
+
+
 .darbo-laikas h3{
   text-transform: none;
   /* margin-bottom: 2rem; */
@@ -821,6 +900,14 @@ margin:4rem 0 4rem 0;
   width: 60%;
   height: auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .duk-section{
+    width: 75%;
+  }
+}
+
+
 .map-placement{
   padding:0;
 }
