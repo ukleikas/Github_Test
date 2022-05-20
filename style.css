@@ -349,6 +349,10 @@ h1.main_title-headline span{
     text-shadow: 2px 2px 2px rgba(0,0,0,0.9);
   }
 
+  .hero_page-image img{
+    width: 100%;
+  }
+
 
 }
 
