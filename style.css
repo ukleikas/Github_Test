@@ -3,7 +3,7 @@
   --color-dark: #505050;
   --color-light: #C4C4C4;
   --color-lightbrown: #FFF5EB;
-  --color-lightbrown_bg: #e6e6e6;
+  --color-lightgrey:#e6e6e6;
 }
 
 *, *::after, *::before {
@@ -15,10 +15,12 @@
 html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   min-width: 375px;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,10 +172,6 @@ svg.arrow-side-left {
   }
 }
 
-.kontaktai .icon-kontaktai {
-  display: none;
-}
-
 .kontaktai h2 {
   padding: none;
 }
@@ -184,7 +182,7 @@ svg.arrow-side-left {
 }
 
 .bg-light-grey {
-  background-color: var(--color-light);
+  background-color: var(--color-lightgrey);
 }
 
 .bg-dark-grey-gradient {
@@ -357,7 +355,7 @@ h1.main_title-headline span {
   }
 
   .main_title p {
-    padding: 2.3rem 0;
+    padding: 2.3rem 0 7rem 0;
     text-align: center;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 1);
   }
@@ -444,6 +442,14 @@ h1.main_title-headline span {
   }
 }
 
+/* Info Section */
+
+section.info_section:nth-child(even){
+  background-color: var(--color-lightbrown);
+  height: 100%;
+  width: 100%;
+}
+
 .info_section-text {
   position: relative;
   display: inline-block;
@@ -454,7 +460,7 @@ h1.main_title-headline span {
 .info_section-text p {
   padding: 2.3rem 0;
   /* padding-bottom: 2rem; */
-  text-align: left;
+  /* text-align: left; */
   max-width: 580px;
   /* text-shadow: 2px 2px 2px rgba(0,0,0,0.8); */
 }
@@ -469,12 +475,19 @@ h1.main_title-headline span {
 @media only screen and (max-width: 768px) {
   .info_section-text {
     width: 75%;
+    text-align: center;
+  }
+
+  section.info_section h2{
+    font-size: 3rem;
   }
 }
 
 /* Gedimas */
 section.atlikti_darbai {
-  background-color: #FFF5EB;
+  background-color: var(--color-lightgrey);
+  height: 100%;
+  width: 100%;
 }
 
 .img-container-gedimas {
@@ -665,45 +678,70 @@ section.atlikti_darbai {
     .cta-page .justify-content-left {
       justify-content: center;
     }
+
+    .cta-page .main_title{
+      padding-bottom: 2rem;
+      margin-bottom: 0;
+    }
   }
 
-  .logos ul {
+
+  .logos_section ul {
     position: relative;
-    display: block;
     width: 100%;
     list-style: none;
     padding-left: 0;
-    margin: 5rem 0 2rem 0;
+    height: 10rem;
+    /* margin: 5rem 0 2rem 0; */
   }
 
-  .logos ul li {
+  .logos_section ul li {
     display: inline-block;
     width: 15%;
     max-width: 15rem;
   }
 
-  .logos ul li img {
+  .logos_section ul li img {
     position: inline-block;
     width: 100%;
     height: auto;
   }
 
+  @media only screen and (max-width:768px){
+    .logos_section ul li {
+      width: 14%;
+    }
+  }
+
+  /* BENEFITS SECTION */
+
+  @media only screen and (max-width:768px){
+    .benefits_section-list{
+      margin-bottom: 0;
+    }
+  }
+
+
+  /* KONTAKTAI Section */
+
+
   .kontaktai {
     text-align: center;
+    padding: 5rem 0;
   }
 
   .kontaktai .icon-kontaktai {
-    height: auto;
-    width: 3.5rem;
-    padding: 5rem 0 .5rem 0;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    /* padding: 5rem 0 .5rem 0; */
   }
 
   .kontaktai h2 {
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
   }
 
-  .kontaktai:last-child h2 {
-    color: #fff;
+  .kontaktai:nth-child(even){
+    color:#fff;
   }
 
   .kontaktai:last-child img {
@@ -712,8 +750,19 @@ section.atlikti_darbai {
 
   @media only screen and (max-width: 768px) {
     .kontaktai h2 {
-      padding-top: 5rem;
+      padding-top: 0;
     }
+
+    .kontaktai:nth-child(odd){
+      background-color: var(--color-orange);
+      color:white;
+    }
+
+    .kontaktai:nth-child(even){
+      background-color: var(--color-lightbrown);
+      color:var(--color-orange);
+    }
+
   }
 
   /* Registracijos forma */
